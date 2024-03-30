@@ -1,7 +1,7 @@
 class operators {
   public static void main(String[] args) {
     int number1 = 12;
-    int number2 = 9;
+    double number2 = 5;
 
     // Arithmetic Operators
     System.out.println("number1 + number2: " + (number1 + number2)); // Addition
@@ -9,35 +9,39 @@ class operators {
     System.out.println("number1 * number2: " + (number1 * number2)); // Multiplication
     System.out.println("number1 / number2: " + (number1 / number2)); // Division (integer result)
     System.out.println("number1 % number2: " + (number1 % number2)); // Modulus (remainder)
+    // Assigment Operators
+    int number3 = 10;
+    number3 += 10; // number3 = number3 + 10;
 
-    // Assignment Operator
-    number1 = number2;
-    System.out.println("number1 after assignment: " + number1); // Now number1 is 9
+    System.out.println("number3: " + number3);
 
-    // Comparison Operators
-    System.out.println("number1 == number2: " + (number1 == number2)); // Equal to
-    System.out.println("number1 != number2: " + (number1 != number2)); // Not equal to
-    System.out.println("number1 < number2: " + (number1 < number2)); // Less than
-    System.out.println("number1 > number2: " + (number1 > number2)); // Greater than
-    System.out.println("number1 <= number2: " + (number1 <= number2)); // Less than or equal to
-    System.out.println("number1 >= number2: " + (number1 >= number2)); // Greater than or equal to
+    // Relational Operators
+    // is equal to
+    System.out.println("number1 is equal to number2: " + (number1 == number2));
 
-    // Logical Operators (assuming number1 is still 9)
-    System.out.println("(number1 > 10) && (number2 < 5): " + ((number1 > 10) && (number2 < 5))); // AND (both conditions
-                                                                                                 // false)
-    System.out.println("(number1 > 10) || (number2 < 5): " + ((number1 > 10) || (number2 < 5))); // OR (at least one
-                                                                                                 // condition true)
-    System.out.println("!(number1 < number2): " + (!(number1 < number2))); // NOT (negates the condition)
+    // is not equal to
+    // System.out.println(number1 != number2);
 
-    // Increment and Decrement Operators
-    int temp = number1;
-    System.out.println("number1++: " + temp); // Prints original value (9) before increment
-    number1++;
-    System.out.println("number1 after increment: " + number1); // Now number1 is 10
+    // is greater than
+    // System.out.println(number1 > number2);
 
-    temp = number2;
-    System.out.println("number2--: " + temp); // Prints original value (9) before decrement
-    number2--;
-    System.out.println("number2 after decrement: " + number2); // Now number2 is 8
+    // is less than
+    // System.out.println(number1 < number2);
+
+    // is greater than or equal to
+    // System.out.println(number1 >= number2);
+
+    // is less than or equal to
+    // System.out.println(number1 <= number2);
+
+    // Logical Operators
+    // logical and operators
+    // System.out.println(number1 >= 1 && number1 <= 100);
+
+    // logical or operators
+    boolean isStudent = false;
+    boolean isLibraryMember = true;
+
+    System.out.println(isStudent || isLibraryMember);
   }
 }
